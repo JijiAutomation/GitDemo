@@ -1,0 +1,107 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-25T02:22:35.223Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11838226600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.BeforeSeleniumTest()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Find flights flying between source and destination",
+        "description": "",
+        "id": "find-flights-using-musafir-website;find-flights-flying-between-source-and-destination;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d91.0.4472.114)\nBuild info: version: \u00274.0.0-beta-4\u0027, revision: \u002729f46d02dd\u0027\nSystem info: host: \u0027LAPTOP-LSBIES3I\u0027, ip: \u0027192.168.225.241\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [04ae1554bfce1839e4e4051fc8c20403, close {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\Jiji\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61732/devtoo..., se:cdpVersion: 91.0.4472.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 04ae1554bfce1839e4e4051fc8c20403\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:667)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:497)\r\n\tat stepDefinition.Hooks.AfterSeleniumTest(Hooks.java:23)\r\n",
+              "duration": 4189635700,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)\" because \"this.driver\" is null\r\n\tat pages.FindFlightsPage.closePopUpDisplayed(FindFlightsPage.java:26)\r\n\tat stepDefinition.FindFlights.user_has_navigated_to_musafir_website(FindFlights.java:22)\r\n\tat ✽.User has navigated to Flipkart website and closes alert window(file:///C:/Users/Jiji/eclipse-workspace/Selenium/src/test/java/feature/AutomateMusafir.feature:5)\r\n",
+              "duration": 8971800,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User has navigated to Flipkart website and closes alert window",
+            "match": {
+              "location": "stepDefinition.FindFlights.user_has_navigated_to_musafir_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1993800,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User enters Mobiles in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobiles",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinition.FindFlights.user_enters_source_as_and_destination_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996700,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User clicks Search button",
+            "match": {
+              "location": "stepDefinition.FindFlights.user_selects_travel_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User has navigated to search result page",
+            "match": {
+              "location": "stepDefinition.SearchResults.user_has_navigated_to_flight_search_options()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      }
+    ],
+    "name": "Find flights using Musafir website",
+    "description": "",
+    "id": "find-flights-using-musafir-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/AutomateMusafir.feature",
+    "tags": []
+  }
+]

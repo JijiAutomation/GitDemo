@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.542">
+    <testcase classname="Find flights using Musafir website" name="Find flights flying between source and destination" time="16.191">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given User has navigated to Flipkart website and closes alert window........failed
+When User enters Mobiles in search box......................................skipped
+And User clicks Search button...............................................skipped
+Then User has navigated to search result page...............................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at pages.FindFlightsPage.closePopUpDisplayed(FindFlightsPage.java:26)
+	at stepDefinition.FindFlights.user_has_navigated_to_musafir_website(FindFlights.java:22)
+	at ✽.User has navigated to Flipkart website and closes alert window(file:///C:/Users/Jiji/eclipse-workspace/Selenium/src/test/java/feature/AutomateMusafir.feature:5)
+]]></failure>
+    </testcase>
+</testsuite>
