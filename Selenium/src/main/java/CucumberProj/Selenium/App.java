@@ -10,8 +10,10 @@ public class App
     {
         System.out.println( "Hello World!" );
         
-        String args1;
+        String args1, args2;
         
         args1 = "Hello World";
+        
+        args2 = "Changes made in new folder";
     }
 }
